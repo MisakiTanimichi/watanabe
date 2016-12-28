@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta charset='utf-8'
+    meta name="viewport" content="width=device=width,initial-scale=1"
+    title #{ yield :page_title } | ウェディングプランナー 渡辺 里絵のサイト
+    == stylesheet_link_tag "screen"
+
+  body
+    == render partial: 'partials/global_header'
+    == yield
+    p#pageTop
+      a href="#"
+      i.fa.fa-chevron-up
+    == render partial: 'partials/global_footer'
+    == javascript_include_tag 'jquery-3.1.1.min', 'lightbox.min', 'jquery.fatNav', 'animsition', 'to-top'

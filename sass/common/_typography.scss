@@ -1,0 +1,10 @@
+//基本のフォントスタイル
+body {
+  color: $black;
+  font-size: 14px;
+  font-family: "游明朝",YuMincho,"Yu Mincho","Hiragino Mincho ProN","ヒラギノ明朝 ProN W6","HiraMinProN-W6","HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,29 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@charset "UTF-8";
+@import "compass/reset";
+/*pie-clearfix用の読み込み*/
+@import "compass/utilities/general/clearfix";
+
+@import "common/reset";
+@import "common/sizes";
+@import "common/named-colors";
+@import "common/typography";
+@import "common/heading";
+@import "common/bg";
+@import "common/container";
+
+@import "modules/global-header";
+@import "modules/global-footer";
+
+@import "modules/top";
+@import "modules/gallery";
+@import "modules/about";
+@import "modules/form";
+@import "modules/to-top";
+
+@import 'modules/jquery.fatNav';
+@import 'modules/lightbox';
+@import 'modules/animsition';

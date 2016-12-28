@@ -1,0 +1,146 @@
+.global-footer {
+  color: #fff;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &__content {
+    text-align: center;
+    background-color: rgba($gray, 0.7);
+    padding: 40px 0 30px;
+  }
+
+  &__button {
+    font-size: 20px;
+
+
+    a {
+      margin: 0 auto;
+      padding: 18px 0;
+      box-sizing: border-box;
+      border: #fff 1px solid;
+      display: block;
+      width: 500px;
+      border-radius: 3px;
+      background-image: image-url("mail.svg");
+      background-repeat: no-repeat;
+      background-position: left  25% center;
+      background-size: 28px;
+
+      &:hover {
+        transition: 0.3s;
+        background-color: $black;
+      }
+    }
+  }
+
+  &__number {
+    text-align: center;
+    margin-top: 20px;
+
+    p {
+      display: inline-block;
+      font-size: 25px;
+
+      &:first-child {
+        font-size: 16px;
+        margin: 5px 7px 0 0;
+        vertical-align: top;
+      }
+    }
+
+    small {
+      font-size: 12px;
+      vertical-align: top;
+      display: inline-block;
+      margin: 8px 0 0 12px;
+    }
+  }
+
+  &__bar {
+    @include pie-clearfix;
+    background-color: $gray;
+    font-size: 12px;
+    padding: 7px 20px;
+
+    a {
+      float: left;
+      display: block;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    small {
+      float: right;
+      display: block;
+    }
+  }
+
+  &__facebook {
+    margin-left: 20px;
+  }
+}
+
+// スマホのみ
+@media (max-width: $sp_max_width) {
+  .global-footer {
+
+    &__content {
+      padding: 40px 25px 30px;
+    }
+
+    &__button {
+      font-size: 14px;
+
+      a {
+        padding: 18px 0;
+        width: 100%;
+        background-position: left  17% center;
+        background-size: 20px;
+      }
+    }
+
+    &__number {
+      margin-top: 20px;
+
+      p {
+        display: inline-block;
+        font-size: 18px;
+
+        &:first-child {
+          font-size: 13px;
+          margin: 4px 7px 0 0;
+        }
+      }
+
+      small {
+        display: block;
+        font-size: 10px;
+        margin: 8px 0 0;
+      }
+    }
+
+    &__bar {
+      text-align: center;
+      font-size: 10px;
+      padding: 15px 0;
+
+      a {
+        float: none;
+        margin-bottom: 10px;
+      }
+
+      small {
+        float: none;
+      }
+    }
+
+    &__facebook {
+      margin-left: 0;
+    }
+  }
+}

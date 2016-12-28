@@ -1,0 +1,137 @@
+.form {
+  margin: 0 auto;
+
+  &__area {
+  }
+
+  &__title {
+    text-align: right;
+  }
+
+  &__box {
+    display: block;
+    padding: 10px 0;
+    margin-left: 50px;
+  }
+
+  &__text {
+    display: block;
+    height: 40px;
+    width: 500px;
+    border: 1px solid rgba($black, 0.7);
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  &__time {
+    @extend .form__text;
+    width: 70px;
+    display: inline-block;
+    margin: 0 10px;
+
+    &:first-child {
+      margin: 0 10px 0 0;
+    }
+  }
+
+  &__select {
+    @extend .form__text;
+    background-image: image-url("arrow--bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+
+  &__textarea {
+    @extend .form__text;
+    height: auto;
+  }
+
+  &__personal {
+    text-align: center;
+    margin: 30px 0;
+
+    a {
+      margin-left: 10px;
+      color: #3D98FF;
+    }
+  }
+
+  &__submit {
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid rgba($black, 0.7);
+    height: 50px;
+    background-color: #fff;
+    width: 200px;
+    font-size: 16px;
+
+    &:hover {
+      color: #fff;
+      transition: 0.3s;
+      background-color: $black;
+    }
+  }
+}
+
+table {
+  margin: 0 auto;
+}
+
+// スマホのみ
+@media (max-width: $sp_max_width) {
+  .form {
+
+    &__title {
+      display: block;
+      text-align: left;
+    }
+
+    &__box {
+      font-size: 10px;
+      padding: 10px 0 20px;
+      margin-left: 0;
+    }
+
+    &__text {
+      width: 100%;
+      padding: 5px;
+      font-size: 12px;
+    }
+
+    &__time {
+      width: 70px;
+      margin: 0 5px;
+
+      &:first-child,
+      &:nth-child(4) {
+        margin: 10px 5px 0 0;
+      }
+    }
+
+    &__select {
+      background-position: right 10px center;
+    }
+
+    &__personal {
+      margin: 0 0 20px;
+      line-height: 2;
+      font-size: 12px;
+
+      a {
+        margin-left: 10px;
+      }
+    }
+
+    &__submit {
+      height: 40px;
+      width: 200px;
+      font-size: 14px;
+    }
+  }
+
+  #checkbox-p {
+    margin: 0;
+  }
+}

@@ -1,0 +1,87 @@
+.heading {
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 60px;
+
+  &--title {
+    @extend .heading;
+
+    span {
+      display: block;
+      margin: 30px auto 0;
+      width: 70px;
+      border-bottom: 1px solid $black;
+      height: 1px;
+    }
+  }
+
+  &--description {
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 50px;
+  }
+
+  &--attention {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+}
+
+.txt-red {
+  color: #FF0000;
+  margin-right: 5px;
+}
+
+.section__title {
+  color: $purple;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.section__description {
+  font-size: 13px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// スマホのみ
+@media (max-width: $sp_max_width) {
+  .heading {
+    font-size: 16px;
+    margin-bottom: 20px;
+
+    &--title {
+
+      span {
+        margin: 20px auto 0;
+        width: 50px;
+      }
+    }
+
+    &--description {
+      font-size: 13px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    &--attention {
+      font-size: 10px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .section__title {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .section__description {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+}

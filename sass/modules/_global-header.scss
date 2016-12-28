@@ -1,0 +1,84 @@
+.global-header {
+  @include pie-clearfix;
+
+  &__logo {
+    display: inline-block;
+    background-color: $purple;
+
+    &:hover {
+      transition: 0.3s;
+      opacity: 0.8;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      line-height: 50px;
+      display: block;
+      font-size: 18px;
+      padding: 0 15px;
+    }
+  }
+}
+
+.global-nav {
+  @include pie-clearfix;
+  float: right;
+
+  &__item {
+    float: left;
+    box-sizing: border-box;
+    height: 50px;
+
+    &:hover {
+      border-bottom: 2px solid $purple;
+    }
+
+    a {
+      text-decoration: none;
+      color: $black;
+      line-height: 50px;
+      display: block;
+      font-size: 18px;
+      padding: 0 20px;
+
+      &:hover {
+        transition: 0.3s;
+        color: $purple;
+      }
+    }
+  }
+}
+
+// スマホのみ
+@media (max-width: $sp_max_width) {
+  .global-header {
+
+    &__logo {
+
+      a {
+        font-size: 12px;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .global-nav {
+    float: none;
+
+    &__item {
+      float: none;
+      height: 50px;
+
+      &:hover {
+        border-bottom: none;
+      }
+
+      a {
+        color: #fff;
+        font-size: 14px;
+        padding: 0 20px;
+      }
+    }
+  }
+}

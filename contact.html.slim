@@ -1,0 +1,132 @@
+- content_for :page_title, "お問い合わせ"
+
+section.section.bg-light-gray
+  .container
+    .section__content
+      h2.heading--title
+        |contact
+        span
+      p.heading--description
+        |メールでお問い合わせの際は、以下のフォームよりお問い合わせ下さい。
+        br
+        |まだご検討中の方もお気軽にご相談ください。
+      p.heading--attention
+        span.txt-red *
+        |印は必須項目となります。必ずご記入下さい。
+      form.form action="#" method="get"
+        table
+          tbody
+            tr.form__area
+              th.form__title 
+                label
+                  span.txt-red *
+                  |相談希望日
+              td.form__box
+                input.form__time type="text"
+                  |月
+                input.form__time type="text"
+                  |日
+                input.form__time type="text"
+                  |頃
+            tr.form__area
+              th.form__title 
+                label
+                  span.txt-red *
+                  |お名前
+              td.form__box
+                input.form__text type="text"
+            tr.form__area
+              th.form__title 
+                label
+                  |ふりがな
+              td.form__box
+                input.form__text type="text"
+            tr.form__area
+              th.form__title 
+                label
+                  span.txt-red *
+                  |メールアドレス
+              td.form__box
+                input.form__text type="text"
+            tr.form__area
+              th.form__title 
+                label
+                  span.txt-red *
+                  |メールアドレス（確認）
+                td.form__box
+                  input.form__text type="text"
+            tr.form__area
+              th.form__title 
+                label
+                  span.txt-red *
+                  |電話番号
+              td.form__box
+                input.form__text type="text"
+            tr.form__area
+              th.form__title 
+                label
+                  span.txt-red *
+                  |郵便番号
+              td.form__box
+                input.form__text type="text"
+            tr.form__area
+              th.form__title 
+                label
+                  span.txt-red *
+                  |ご住所
+                td.form__box
+                  input.form__text type="text"
+            tr.form__area
+              th.form__title 
+                label
+                  span.txt-red *
+                  |相手のお名前
+                td.form__box
+                  input.form__text type="text"
+            tr.form__area
+              th.form__title 
+                label
+                  |相手のふりがな
+                td.form__box
+                  input.form__text type="text"
+            tr.form__area
+              th.form__title 
+                label
+                  |連絡ご希望時間帯
+              td.form__box
+                select.form__select type="text" placeholder="時間帯を選択して下さい"
+                  option いつでも可
+                  option 午前中（8時〜12時）
+                  option 12時〜14時
+                  option 14時〜16時
+                  option 16時〜18時
+                  option 18時〜20時
+                  option 20時〜21時
+            tr.form__area
+              th.form__title 
+                label
+                  span.txt-red *
+                  |パーティのご予定
+              td.form__box
+                input.form__time type="text"
+                  |年
+                input.form__time type="text"
+                  |月
+                input.form__time type="text"
+                  |日
+                input.form__time type="text"
+                  |名くらい
+            tr.form__area
+              th.form__title 
+                label
+                  span.txt-red *
+                  |ご相談内容
+              td.form__box
+                textarea.form__textarea rows="5"
+        .form__personal
+          input#checkbox-p type="checkbox" value="1"
+          label for="checkbox-p"
+            a href="privacy_policy" target="_blank" 個人情報保護方針
+            span に同意の上、「送信する」ボタンを押して下さい。
+        input.form__submit type="submit" value="送信する"
+        

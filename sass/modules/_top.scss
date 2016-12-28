@@ -1,0 +1,214 @@
+.heading--top {
+  background-image: image-url("top.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: #fff;
+  box-sizing: border-box;
+  padding-top: 250px;
+  text-align: center;
+
+  &__small {
+    font-size: 28px;
+  }
+
+  &__large {
+    font-size: 51px;
+  }
+}
+
+.wedding {
+  padding: 60px 0;
+  text-align: center;
+  background-image: image-url("w-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  &__title {
+    font-size: 23px;
+    line-height: 1.8;
+    margin-bottom: 30px
+  }
+
+  &__narration {
+    line-height: 1.5;
+    font-size: 13px;
+  }
+}
+
+.wide {
+  float: left;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  width: 33.333%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &:hover {
+    transition: 0.3s;
+    opacity: 0.8;
+  }
+
+  &__box {
+    position: absolute;
+    box-sizing: border-box;
+    width: 33.333%;
+    bottom: 0;
+    background-color: rgba(#000, 0.5);
+    padding: 30px;
+  }
+
+  &__title {
+    line-height: 1.8;
+  }
+}
+
+.img--left {
+  background-image: image-url("work1.jpg");
+}
+
+.img--center {
+  background-image: image-url("work2.jpg");
+}
+
+.img--right {
+  background-image: image-url("work3.jpg");
+}
+
+.section {
+  &__content {
+    @include pie-clearfix;
+    padding: 60px 0 80px;
+    margin: 0 auto;
+  }
+}
+
+.flow {
+
+  &__item {
+    float: left;
+    width: 31.7%;
+
+    &:nth-child(2) {
+      margin: 0 20px;
+    }
+  }
+
+  &__number {
+    margin: 0 auto 20px;
+    border: 1px solid $black;
+    box-sizing: border-box;
+    font-size: 22px;
+    padding: 7px 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &__box {
+    background-color: #fff;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--1 {
+    background-image: image-url("flow1.jpg");
+  }
+
+  &--2 {
+    background-image: image-url("flow2.jpg");
+  }
+
+  &--3 {
+    background-image: image-url("flow3.jpg");
+  }
+
+  &__text {
+    line-height: 1.5;
+    font-size: 13px;
+  }
+}
+
+// スマホのみ
+@media (max-width: $sp_max_width) {
+
+  .heading--top {
+    height: 250px;
+    padding-top: 163px;
+
+    &__small {
+      font-size: 14px;
+    }
+
+    &__large {
+      font-size: 25px;
+    }
+  }
+
+  .wedding {
+    padding: 60px 0;
+    background-image: none;
+    margin: 0 25px;
+
+    &__title {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    &__narration {
+      font-size: 12px;
+    }
+  }
+
+  .wide {
+    position: relative;
+    float: none;
+    width: 100%;
+    height: 330px;
+
+    &__box {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding: 30px;
+    }
+  }
+
+  .section {
+    &__content {
+      padding: 50px 0;
+    }
+  }
+
+  .flow {
+
+    &__item {
+      float: none;
+      width: 100%;
+      margin-bottom: 30px;
+
+      &:nth-child(2) {
+        margin: 0 0 30px;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+ }
